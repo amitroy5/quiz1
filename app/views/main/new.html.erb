@@ -1,0 +1,8 @@
+<h1>So, where are you from?</h1>
+
+<%= simple_form_for @location, url: main_index_path do |f| %>
+  <%= f.input :city %>
+  <%= f.input :state %>
+  <br />
+  <%= f.submit 'Submit', class: 'button' %>
+<% end %>
